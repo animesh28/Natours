@@ -13,16 +13,16 @@
     <title>Natours | Exciting tours for adventurous people</title>
 </head>
 <body>
-
+    
     <div class="navigation">
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
         
         <label for="navi-toggle" class="navigation__button">
             <span class="navigation__icon">&nbsp;</span>
         </label>
-
+        
         <div class="navigation__background">&nbsp;</div>
-
+        
         <nav class="navigation__nav">
             <ul class="navigation__list">
                 <li class="navigation__item">
@@ -43,7 +43,7 @@
             </ul>
         </nav>
     </div>
-
+    
     <header class="header">
         <div class="header__logo-box">
             <img src="img/logo-white.png" alt="Logo" class="header__logo">
@@ -58,7 +58,7 @@
     </header>
     <main>
         <section class="section-about" id="section-about">
-            <div class="u-center-text u-margin-bottom-big">
+            <div class="about__heading u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
                     Exciting tours for adventurous people
                 </h2>
@@ -78,14 +78,29 @@
                 </div>
                 <div class="col-1-of-2">
                     <div class="composition">
-                        <img src="img/nat-1-large.jpg" alt="Photo1" class="composition__photo composition__photo--p1">
-                        <img src="img/nat-2-large.jpg" alt="Photo2" class="composition__photo composition__photo--p2">
-                        <img src="img/nat-3-large.jpg" alt="Photo3" class="composition__photo composition__photo--p3">
+                        
+                        <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 100w"
+                        sizes="(max-width:900px) 20vw, (max-width:600px) 30vw, 300px"
+                        alt="Photo"
+                        class="composition__photo composition__photo--p1"
+                        src="img/nat-1-large.jpg">
+                        
+                        <img srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 100w"
+                        sizes="(max-width:900px) 20vw, (max-width:600px) 30vw, 300px"
+                        alt="Photo"
+                        class="composition__photo composition__photo--p2"
+                        src="img/nat-2-large.jpg">
+                        
+                        <img srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 100w"
+                        sizes="(max-width:900px) 20vw, (max-width:600px) 30vw, 300px"
+                        alt="Photo"
+                        class="composition__photo composition__photo--p3"
+                        src="img/nat-3-large.jpg">
                     </div>
                 </div>
             </div>
         </section>
-
+        
         <section class="section-features" id="section-features">
             <div class="row">
                 <div class="col-1-of-4">
@@ -127,13 +142,13 @@
             </div>
         </section>
         <section class="section-tours" id="section-tours">
-
+            
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
                     Most Popular Tours
                 </h2>
             </div>
-
+            
             <div class="row">
                 <div class="col-1-of-3">
                     <div class="card">
@@ -165,7 +180,7 @@
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="col-1-of-3">
                     <div class="card">
                         <div class="card__side card__side--front">
@@ -196,7 +211,7 @@
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="col-1-of-3">
                     <div class="card">
                         <div class="card__side card__side--front">
@@ -228,14 +243,14 @@
                     </div>
                 </div>
             </div>
-
+            
             <div class="u-center-text u-margin-top-huge">
                 <a href="#" class="btn btn--green">Discover all tours</a>
             </div>
         </section>
-
+        
         <section class="section-stories" id="section-stories">
-
+            
             <div class="bg-video">
                 <video class="bg-video__content" autoplay muted loop>
                     <source src="img/video.mp4" type="video/mp4">
@@ -247,7 +262,7 @@
                     We make people genuinely happy
                 </h2>
             </div>
-
+            
             <div class="row">
                 <div class="story">
                     <figure class="story__shape">
@@ -264,7 +279,7 @@
                     </div>
                 </div>
             </div>
-
+            
             <div class="row">
                 <div class="story">
                     <figure class="story__shape">
@@ -281,12 +296,12 @@
                     </div>
                 </div>
             </div>
-
+            
             <div class="u-center-text u-margin-top-huge">
                 <a href="#" class="btn-text">Read all stories &rarr;</a>
             </div>
         </section>
-
+        
         <section class="section-book" id="section-book">
             <div class="row">
                 <div class="book">
@@ -297,17 +312,17 @@
                                     Start Booking Now
                                 </h2>
                             </div>
-
+                            
                             <div class="form__group">
                                 <input type="text" class="form__input" placeholder="Full Name" id="name" required>
                                 <label for="name"class="form__label">Full Name</label>
                             </div>
-
+                            
                             <div class="form__group">
                                 <input type="email" class="form__input" placeholder="Email address" id="email" required>
                                 <label for="email"class="form__label">Email address</label>
                             </div>
-
+                            
                             <div class="form__group u-margin-bottom-medium">
                                 <div class="form__radio-group">
                                     <input type="radio" class="form__radio-input" id="small" name="size">
@@ -316,7 +331,7 @@
                                         Small tour group
                                     </label>
                                 </div>
-
+                                
                                 <div class="form__radio-group">
                                     <input type="radio" class="form__radio-input" id="large" name="size">
                                     <label for="large" class="form__radio-label">
@@ -325,7 +340,7 @@
                                     </label>
                                 </div>
                             </div>
-
+                            
                             <div class="form__group">
                                 <button class="btn btn--green">Next step</button>
                             </div>
@@ -338,9 +353,13 @@
     
     <footer class="footer">
         <div class="footer__logo-box">
-            <img src="img/logo-green-2x.png" alt="Logo" class="footer__logo">
+            <picture class="footer__logo">
+                <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x"
+                media="(max-width: 37.5em)">
+                <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Logo" src="img/logo-green-2x.png">
+            </picture>
         </div>
-
+        
         <div class="row">
             <div class="col-1-of-2">
                 <div class="footer__navigation">
@@ -359,7 +378,7 @@
             </div>
         </div>
     </footer>
-
+    
     <div class="popup" id="popup">
         <div class="popup__content">
             <div class="popup__left">
